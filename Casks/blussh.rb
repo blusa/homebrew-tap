@@ -1,6 +1,6 @@
 cask "blussh" do
-  version "1.0.0"
-  sha256 "cc8ca8351591f2a748757a2694e92f94186f464249667357a357ef7ecd706cc1"
+  version "1.0.1"
+  sha256 "34b0d06eb1a7d7b7ae64664afa7b44826b088b958962b5cbaa7574e918d40790"
 
   url "https://github.com/blusa/blussh/releases/download/v#{version}/blussh-v#{version}.zip"
   name "blussh"
