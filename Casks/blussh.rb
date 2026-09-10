@@ -1,6 +1,6 @@
 cask "blussh" do
-  version "1.0.2"
-  sha256 "12fe21198bcc05d86ebb88bf1997d8f085c6d25d9ace6c12071ee215f56b3f0a"
+  version "1.0.3"
+  sha256 "1249bc7ccf314ad56c36b7943c61b947c0158c894bde417676f47898cd1a9e71"
 
   url "https://github.com/blusa/blussh/releases/download/v#{version}/blussh-v#{version}.zip"
   name "blussh"
@@ -10,11 +10,6 @@ cask "blussh" do
   depends_on macos: :sequoia
 
   app "blussh.app"
-
-  caveats <<~EOS
-    blussh is not notarized. Clear the quarantine flag after install:
-      xattr -dr com.apple.quarantine /Applications/blussh.app
-  EOS
 
   zap trash: "~/Library/Preferences/cloud.blusa.blussh.plist"
 end
