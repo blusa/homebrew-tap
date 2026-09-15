@@ -15,9 +15,8 @@ cask "blussh" do
   # manually approved is silently refused when launchd starts it at login
   # (the launch dies as xpcproxy). The app is notarized, so Gatekeeper has
   # already vouched for it; drop the flag so launch-at-login works.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/blussh.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/blussh.app"]
   end
 
   zap trash: "~/Library/Preferences/cloud.blusa.blussh.plist"
