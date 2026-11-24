@@ -1,11 +1,11 @@
 cask "blussh" do
-  version "1.0.4"
-  sha256 "296a96f351eb9ebc9cc88dfb6c29c37c25fbffead09bb1397defd72cf7a91cc0"
+  version "1.0.5"
+  sha256 "e647802066a1f8bfff5df11ba270f669100edf6d7d778e7fd1f5cfca0f938965"
 
-  url "https://github.com/blusa/blussh/releases/download/v#{version}/blussh-v#{version}.zip"
+  url "https://github.com/blusa/bleet/releases/download/v#{version}/blussh-v#{version}.zip"
   name "blussh"
   desc "Menu bar app that monitors host connectivity across SSH config, Tailscale, and ZeroTier"
-  homepage "https://github.com/blusa/blussh"
+  homepage "https://github.com/blusa/bleet"
 
   depends_on macos: :sequoia
 
